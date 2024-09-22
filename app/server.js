@@ -27,5 +27,16 @@ app.set("views", "./src/views");
 app.set("view engine", "ejs");
 app.use(express.static(`${__dirname}/src/public`));
 
+var passport = require("passport"),
+    localStrategy = require("passport-local").Strategy;
+
+app.post("/login/login_process",
+   passport.authenticate("local", {
+        successRedirect: "/",
+        failureRedirect: "/login"
+   })
+);
+
+
 module.exports = app;
 

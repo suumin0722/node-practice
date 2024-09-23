@@ -2,7 +2,7 @@
   "name": "practice",
   "version": "1.0.0",
   "description": "��r\u0000e\u0000a\u0000d\u0000m\u0000e\u0000\r\u0000 \u0000",
-  "main": "server.js",
+  "main": "app.js",
   "bin": {
     "practice": "bin/www.js"
   },
@@ -12,7 +12,7 @@
     "array-flatten": "^1.1.1",
     "async": "^3.2.6",
     "balanced-match": "^1.0.2",
-    "body-parser": "^1.20.2",
+    "body-parser": "^1.20.3",
     "brace-expansion": "^1.1.11",
     "bytes": "^3.1.2",
     "call-bind": "^1.0.7",
@@ -89,7 +89,6 @@
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./bin/www.js"
